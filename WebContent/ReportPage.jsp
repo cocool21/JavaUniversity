@@ -7,8 +7,6 @@
 <title>Student Report</title>
 <link href="css/site.css" rel="stylesheet">
 </head>
-<body>
-<h1>Here is your report: </h1>
 <style>
 table, th, td {
     border: 1px solid black;
@@ -16,6 +14,8 @@ table, th, td {
     padding: 15px;
 }
 </style>
+<body>
+<h1>Here is your report: </h1>
  <table style="width:100%">
   <tr>
     <td>Course</td>
@@ -28,6 +28,6 @@ table, th, td {
     <td> <%= request.getParameter("grade") %></td>
   </tr>
 </table> 
-<a href="UserPage.jsp">Go Back</a> 
+Please fill out a <a href="Questionnaire.html">questionnaire</a> 
 </body>
 </html>

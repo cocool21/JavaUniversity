@@ -5,8 +5,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Welcome Page</title>
+<link href="css/site.css" rel="stylesheet">
 </head>
+<style>
+body {
+    background-color: coral;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+</style>
 <body>
+<h1>Main Page</h1>
 Welcome, <%= request.getParameter("emailaddress") %><br/>
 Click  <a href="UserPage.jsp?emailaddress=<%= request.getParameter("emailaddress") %>">here</a> to generate your report
 </body>

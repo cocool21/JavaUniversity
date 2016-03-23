@@ -7,11 +7,11 @@
 <title>Confirmation</title>
 </head>
 <body>
-Here is your summary
+Here is your summary<br/>
 Student Name: <%= request.getParameter("studentname") %><br/>
 Course you take: <%= request.getParameter("course") %> <%= request.getParameter("number") %><br/>
 Credit Hours: <%= request.getParameter("credithr") %><br/>
 Grade: <%= request.getParameter("grade") %><br/>
-Click  <a href="ReportPage.jsp?course=<%= request.getParameter("course") %>&number=<%= request.getParameter("number") %>&credithr=<%= request.getParameter("credithr") %>&grade=<%= request.getParameter("grade") %>">confirm</a> to generate your report
+Click  <a href="ReportPage.jsp?course=<%= request.getParameter("course") %>&number=<%= request.getParameter("number") %>&credithr=<%= request.getParameter("credithr") %>&grade=<%= request.getParameter("grade") %>&studentname=<%= request.getParameter("studentname") %>">confirm</a> to generate your report
 </body>
 </html>
